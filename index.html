@@ -13,6 +13,7 @@
     <link rel="bookmark" href="favicon.ico"/>
     <!-- site css -->
     <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/sy.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
@@ -22,6 +23,13 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/site.min.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
   </head>
   <body style="background-color: #f1f2f6;">
     <div class="docs-header">
@@ -35,16 +43,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          <a class="navbar-brand" href="index.html"><img src="img/sy-oo.png" height="40"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/sy-oo.png" height="40"></a>
+
           </div>
-          <div class="collapse navbar-collapse">                
-            <ul class="nav navbar-nav">
-              <li><a class="nav-link current" href="index.html">首页</a></li>
-              <li><a class="nav-link" href="demo.html">博客</a></li>
-              <li><a class="nav-link" href="about.html">关于我</a></li>
-              <li><a class="nav-link" href="donate.html">捐赠</a></li>
-            </ul>
-            <form class="navbar-form has-warning navbar-right" role="search">
+          <div class="collapse navbar-collapse">
+            <form class="navbar-form has-warning navbar-left" role="search">
               <div class="form-search input-group">
                 <input type="text" class="form-control search-query">
                 <span class="input-group-btn">
@@ -52,7 +55,16 @@
                 </span>
               </div>
             </form>
-
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="nav-link current" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp首页</a></li>
+              <li><a class="nav-link" href="blog.html"><i class="fa fa-bold" aria-hidden="true"></i>&nbsp博客</a></li>
+              <li><a class="nav-link" href="blog.html"><i class="fa fa-user-md" aria-hidden="true"></i>&nbsp妄想症候群</a></li>
+              <li><a class="nav-link" href="blog.html"><i class="fa fa-leaf" aria-hidden="true"></i>&nbspSpring</a></li>
+              <li><a class="nav-link" href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp关于我</a></li>
+              <li><a class="nav-link" href="about.html"><i class="fa fa-rss" aria-hidden="true"></i>&nbsp订阅</a></li>
+              <li><a class="nav-link" href="donate.html"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp捐赠</a></li>
+            </ul>
+            
           </div>
         </div>
       </nav>
@@ -97,13 +109,52 @@
                   <p><i class="fa fa-envelope" aria-hidden="true"></i> :  yql0127@163.com  </p>
                   <p><i class="fa fa-qq" aria-hidden="true"></i> :  qun154625967 </p>
                   <p>
-                    <a href="http://www.symars.cn" class="btn btn-warning" role="button"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                    <a href="http://weibo.com/symarsyoung" class="btn btn-danger" role="button"><i class="fa fa-weibo" aria-hidden="true"></i></a> 
-                    <a href="https://github.com/symars" class="btn btn-inverse" role="button"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                    <a href="http://www.symars.cn" class="btn btn-warning" role="button" data-toggle="tooltip" data-placement="bottom" title="http://www.symars.cn">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://weibo.com/symarsyoung" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="http://weibo.com/symarsyoung">
+                      <i class="fa fa-weibo" aria-hidden="true"></i>
+                    </a>                     
+                    <a href="https://github.com/symars" class="btn btn-inverse" role="button" data-toggle="tooltip" data-placement="bottom" title="https://github.com/symars">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+
                   </p>
                   
                 </div>
               </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
         <div class="row">
